@@ -1,0 +1,144 @@
+/* Reset default styles for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+  }
+  
+  /* Body styling with a calm background */
+  body {
+    background-color: #f0f4f8; /* Light, soothing blue-gray */
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+  }
+  
+  /* Main container for organized content */
+  .container {
+    max-width: 800px;
+    width: 100%;
+    background-color: #ffffff; /* Clean white background */
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+    margin: 20px 0;
+  }
+  
+  /* Heading Styles - Clear Differentiation */
+  
+  /* h2 - Primary Heading (e.g., Angular Pipes) */
+  h2 {
+    font-size: 2.2em;
+    color: #1a3c5e; /* Deep blue for prominence */
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    border-bottom: 3px solid #1a3c5e; /* Matching bottom border */
+    font-weight: 700;
+  }
+  
+  /* h3 - Secondary Heading (e.g., Select a day) */
+  h3 {
+    font-size: 1.6em;
+    color: #2e7d32; /* Soft green for distinction */
+    margin: 20px 0 15px;
+    padding-left: 10px;
+    border-left: 4px solid #2e7d32; /* Green left border */
+    font-weight: 600;
+  }
+  
+  /* h4 - Tertiary Heading (e.g., Strings, Money built-in pipe) */
+  h4 {
+    font-size: 1.3em;
+    color: #d32f2f; /* Warm red for subtopics */
+    margin: 15px 0 10px;
+    padding-left: 8px;
+    border-left: 3px solid #d32f2f; /* Red left border */
+    font-weight: 500;
+  }
+  
+  /* Button Styling for Day Selection */
+  button {
+    background-color: #4a90e2; /* Pleasant blue */
+    color: #ffffff;
+    border: none;
+    padding: 10px 18px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #357abd; /* Slightly darker blue on hover */
+  }
+  
+  /* Day Selection Content Styling */
+  div[ngSwitch] {
+    margin: 15px 0;
+    padding: 12px;
+    background-color: #e8f5e9; /* Light green background */
+    border-left: 3px solid #2e7d32; /* Matches h3 border */
+    border-radius: 4px;
+    font-size: 1.1em;
+    color: #1a3c5e;
+    line-height: 1.5;
+  }
+  
+  /* Paragraph Styling for Pipe Outputs */
+  p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 10px 0;
+    padding: 8px 12px;
+    background-color: #f9f9f9; /* Very light gray */
+    border-left: 2px solid #4a90e2; /* Blue border for consistency */
+    border-radius: 4px;
+    color: #333;
+  }
+  
+  /* Pre Styling for JSON Output */
+  pre {
+    font-size: 1em;
+    line-height: 1.5;
+    margin: 10px 0;
+    padding: 12px;
+    background-color: #f5f5f5; /* Light gray */
+    border-left: 2px solid #d32f2f; /* Matches h4 border */
+    border-radius: 4px;
+    color: #333;
+    white-space: pre-wrap; /* Better text wrapping */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .container {
+      padding: 15px;
+    }
+  
+    h2 {
+      font-size: 1.8em;
+    }
+  
+    h3 {
+      font-size: 1.4em;
+    }
+  
+    h4 {
+      font-size: 1.1em;
+    }
+  
+    button {
+      width: 100%;
+      margin: 5px 0;
+    }
+  
+    p, pre {
+      font-size: 1em;
+    }
+  }
